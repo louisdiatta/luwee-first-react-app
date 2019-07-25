@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 export class MessageItem extends Component {
   render() {
@@ -34,3 +35,8 @@ export class MessageItem extends Component {
 }
 
 export default MessageItem
+
+MessageItem.propTypes = {
+  message: PropTypes.object.isRequired,
+  deleteMessage: PropTypes.func.isRequired
+}

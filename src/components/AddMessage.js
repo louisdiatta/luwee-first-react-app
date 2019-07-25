@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 export class AddMessage extends Component {
   state = {
@@ -62,3 +63,7 @@ export class AddMessage extends Component {
 }
 
 export default AddMessage
+
+AddMessage.propTypes = {
+  onSubmit: PropTypes.func.isRequired
+}
