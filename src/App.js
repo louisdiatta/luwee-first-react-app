@@ -7,18 +7,19 @@ import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import About from './components/pages/About'
 import axios from 'axios'
+import uuid from 'uuid'
 
 class App extends Component {
   state = {
     messages: [
       {
-        id: 1,
+        id: uuid.v4(),
         from: 'Luwee',
         status: 'unread',
         content: 'Hi! Are you guys doing great?'
       },
       {
-        id: 3,
+        id: uuid.v4(),
         from: 'Aliou',
         status: 'unread',
         content: 'I am a network engineer'
@@ -28,7 +29,7 @@ class App extends Component {
 
   addMessage = message => {
     const newMessage = {
-      id: this.state.messages.length + 1,
+      id: uuid.v4(),
       from: message.from,
       status: 'unread',
       content: message.content

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import MessageItem from './MessageItem'
 import PropTypes from 'prop-types'
+import uuid from 'uuid'
 
 export default class Messages extends Component {
   render() {
@@ -22,19 +23,19 @@ Messages.propTypes = {
 Messages.defaultProps = {
   messages: [
     {
-      id: 1,
+      id: uuid.v4(),
       from: 'Luwee',
       status: 'unread',
       content: 'Hi! Are you guys doing great?'
     },
     {
-      id: 2,
+      id: uuid.v4(),
       from: 'Ama',
       status: 'read',
       content: 'I need help with wordpress'
     },
     {
-      id: 3,
+      id: uuid.v4(),
       from: 'Aliou',
       status: 'unread',
       content: 'I am a network engineer'
