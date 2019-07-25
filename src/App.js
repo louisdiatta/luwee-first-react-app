@@ -11,24 +11,18 @@ import axios from 'axios'
 class App extends Component {
   state = {
     messages: [
-      // {
-      //   id: 1,
-      //   from: 'Luwee',
-      //   status: 'unread',
-      //   content: 'Hi! Are you guys doing great?'
-      // },
-      // {
-      //   id: 2,
-      //   from: 'Ama',
-      //   status: 'read',
-      //   content: 'I need help with wordpress'
-      // },
-      // {
-      //   id: 3,
-      //   from: 'Aliou',
-      //   status: 'unread',
-      //   content: 'I am a network engineer'
-      // }
+      {
+        id: 1,
+        from: 'Luwee',
+        status: 'unread',
+        content: 'Hi! Are you guys doing great?'
+      },
+      {
+        id: 3,
+        from: 'Aliou',
+        status: 'unread',
+        content: 'I am a network engineer'
+      }
     ]
   }
 
@@ -49,8 +43,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
-    .then(resp => console.log(resp.data))
+    axios
+      .get('https://jsonplaceholder.typicode.com/todos?_limit=5')
+      .then(resp => console.log(resp.data))
   }
 
   render() {
