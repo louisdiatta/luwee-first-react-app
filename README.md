@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Quick Start
+
+- `git clone https://github.com/louisdiatta/luwee-first-react-app.git`
+- `cd luwee-first-react-app`
+- `npm install`
+- `npm start`
+app must be now available on [http://localhost:3000](http://localhost:3000)
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
